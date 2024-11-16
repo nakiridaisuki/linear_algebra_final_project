@@ -1,4 +1,4 @@
-#ifdef __VECTOR_H__
+#ifndef __VECTOR_H__
 #define __VECTOR_H__
 
 typedef struct vector{
@@ -6,9 +6,8 @@ typedef struct vector{
     double **p;
 } vector;
 
+vector *vector_init(int x, int y);
 double dot(const vector *a, const vector *b);
-double cross(const vector *a, const vector *b);
-vector *multiply(vector *a, vector b);
-void vector_init(int x, int y);
+void multiply(const vector *a, vector *b);
 
 #endif
