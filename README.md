@@ -1,7 +1,7 @@
 # linear_algebra_final_project
 
 ## Task list:
- - [ ] write this f**king document today (11/16)
+ - [x] write this f**king document today (11/16)
 
 ### Code
  - vector (11/24)
