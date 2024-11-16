@@ -1,0 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+## 2024-11-16
+
+### Added
+- Makefile content
+- Changelog's template and changelog itself
+- Notices in `./main.c`
+
+### Changed
+- Executable files and test.c in gitignore
