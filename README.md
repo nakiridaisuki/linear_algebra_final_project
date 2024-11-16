@@ -59,8 +59,8 @@ Feel free to change our code as long as it has the function we need.
 ## What should everyone do:
 1. Choose at least one part you want to do in the task list.
 2. Report your choice in line group, and I will add our name behind the task.
-3. Creat your branch and work in it.
-3. Compelet your job before the deadline (the date in brackets behind task).
+3. Create your branch and work within it.
+3. Complete your job before the deadline (the date in brackets behind task).
 4. Learn something cool during this project~
 
 ## Documents

@@ -50,9 +50,9 @@ CHANGELOG 的寫法[參考](./changelogtemplate.md)
 
 ### 提交修改
 當你寫好你的東西後，使用這些指令把你的修改提交到你的分支上，並推送到 GitHub 上 \
-記得寫好 commit 時的訊息，以及打好你的分支名稱
+記得在 commit 時的訊息裡用幾個字簡述你的修改，以及打好你的分支名稱
 ```
 git add -A
-git commit -m "modify message"
-git push origine [your branch name]
+git commit -m "what change did you make"
+git push origin [your branch name]
 ```
