@@ -64,10 +64,10 @@ Feel free to change our code as long as it has the function we need.
 4. Learn something cool during this project~
 
 ## Documents
-[如何使用 GitHub](./documents/use_zh.md) / 
-[How to use GitHub](./documents/use_en.md)\
-[專案介紹](./documents/intro_zh.md) /
-[Project introduction](./documents/intro_en.md)
+[如何使用 GitHub](./docs/use_zh.md) / 
+[How to use GitHub](./docs/use_en.md)\
+[專案介紹](./docs/intro_zh.md) /
+[Project introduction](./docs/intro_en.md)
 
 ## Reference
 [My old code](https://github.com/nakiridaisuki/rotate_anything) \
