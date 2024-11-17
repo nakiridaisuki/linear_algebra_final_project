@@ -13,3 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - Executable files and test.c in gitignore
+
+## [toby] 2024-11-17
+
+### Added
+- Transpose method
+
+### Changed
+- Implemented vector_init
+- Implemented transpose

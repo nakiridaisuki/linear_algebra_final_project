@@ -7,6 +7,7 @@ typedef struct vector{
 } vector;
 
 vector *vector_init(int x, int y);
+vector *transpose(const vector *v);
 double dot(const vector *a, const vector *b);
 void multiply(const vector *a, vector *b);
 
