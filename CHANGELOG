@@ -29,7 +29,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 - Transpose method
+- pvector method
 
 ### Changed
 - Implemented vector_init
 - Implemented transpose
+- Implemented multiply
+- Implemented pvector
