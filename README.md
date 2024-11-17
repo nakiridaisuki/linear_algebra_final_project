@@ -17,7 +17,7 @@
 
 ### Video
  - [ ] animation : Toby (12/1)
- - [ ] voice (12/1)
+ - [ ] voice : Banana(12/1)
 
 ### Others
  - [ ] report : Banana (12/15)
