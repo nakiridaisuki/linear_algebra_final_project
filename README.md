@@ -4,10 +4,10 @@
  - [x] write this f**king document today (11/16)
 
 ### Code
- - vector (11/24)
-    - [ ] vector_init
-    - [ ] dot
-    - [ ] multiply 
+ - vector (11/24) : Toby is god
+    - [x] vector_init
+    - [x] dot
+    - [x] multiply 
  - plot.h (11/24)
     - [ ] plot_init
     - [ ] plot_add
