@@ -1,0 +1,30 @@
+\section{Introduction}
+In the 3-dimentional Cartesian coordinate system, 
+each point \(P\) in the space can be described with a set of coordinates \((x,y,z)\). 
+A rotation matrix can be used to spin the point amongst the desired axes. 
+Rotation matrix for each axis \(x\), \(y\), and \(z\) that rotates for an angle \(\phi\) are as follows:
+
+\[
+R_x (\phi)=
+\begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & \cos(\phi) & -\sin(\phi) \\
+        0 & \sin(\phi) & \cos(\phi)
+    \end{pmatrix}
+\]
+\[
+R_y (\phi)=
+    \begin{pmatrix}
+        \cos(\phi) & 0 & \sin(\phi) \\
+        0 & 1 & 0 \\
+        -\sin(\phi) & 0 & \cos(\phi)
+    \end{pmatrix}
+\]
+\[
+R_z (\phi)=
+    \begin{pmatrix}
+        \cos(\phi) & -\sin(\phi) & 0 \\
+        \sin(\phi) & \cos(\phi) & 0 \\
+        0 & 0 & 1
+    \end{pmatrix}
+\]
