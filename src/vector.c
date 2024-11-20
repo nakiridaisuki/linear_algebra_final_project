@@ -44,7 +44,10 @@ vector* transpose(const vector *v){
 double dot(const vector* a, const vector* b){
     vector *t = transpose(a);
     vector *ans = multiply(t,b);
-    return ans->p[0][0];
+    double tmp = ans->p[0][0];
+    vector_free(t);
+    vector_free(ans);
+    return tmp;
 }
 
 vector* multiply(const vector* a, const vector* b){
@@ -76,6 +79,8 @@ void pvector(const vector* v){
 }
 
 void *vector_free(vector *a){
+    for(int i=0; i<a->x; i++)
+        free(a->p[i]);
     free(a->p);
     free(a);
     return NULL;

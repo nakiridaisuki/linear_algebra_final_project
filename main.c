@@ -12,10 +12,6 @@ double A = 0, B = 0, C = 0;
 double dA = 0.05, dB = 0.08, dC = 0;
 int H = 30, W = 80;
 
-struct matrix{
-    double a, b, c, d, e, f, g, h, i;
-}M;
-
 // the Fast Inverse Square Root 
 float Q_Inv_sqrt(float x){
     float x2 = 0.5f * x;
@@ -34,11 +30,10 @@ double value(vector *v){
     return Q_Inv_sqrt(sum);
 }
 
-vector *make_matrix(double A, double B, double C){
+void make_matrix(vector *M, double A, double B, double C){
     double sA = sin(A), sB = sin(B), sC = sin(C);
     double cA = cos(A), cB = cos(B), cC = cos(C);
 
-    vector *M = vector_init(3, 3);
     M->p[0][0] = cC*cB;
     M->p[0][1] = -sC*cA + cC*sB*sA;
     M->p[0][2] = sC*sA + cC*sB*cA;
@@ -48,7 +43,6 @@ vector *make_matrix(double A, double B, double C){
     M->p[2][0] = -sB;
     M->p[2][1] = cB*sA;
     M->p[2][2] = cB*cA;
-    return M;
 }
 
 int main(){
@@ -59,13 +53,15 @@ int main(){
     light->p[1][0] = 0;
     light->p[2][0] = 1;
     plot *canva = plot_init(H, W);
+    vector *M = vector_init(3, 3);
+
 
     printf("\x1b[2J");
     while(1){
         plot_clean(canva);
         memset(depth, 0, sizeof(depth));
 
-        vector *M = make_matrix(A, B, C);
+        make_matrix(M, A, B, C);
         
         for(double i=0; i<6.28; i+=0.07){
             for(double j=0; j<6.28; j+=0.02){
@@ -99,10 +95,10 @@ int main(){
                     depth[x][y] = z;
                     plot_add(canva, x, y, ".,-~:;=!*#$@"[D > 0 ? D : 0]);
                 }
-                // plot_add(canva, x, y, '.');
+                vector_free(point);
+                vector_free(normal);
             }
         }
-        M = vector_free(M);
         plot_show(canva);
         A += dA;
         B += dB;
