@@ -9,11 +9,11 @@
     - [x] dot
     - [x] multiply 
  - plot.h (11/24)
-    - [ ] plot_init
-    - [ ] plot_add
-    - [ ] plot_show
- - [ ] main.c : Nakiri (12/1)
- - [ ] makefile : Nakiri (12/1)
+    - [x] plot_init
+    - [x] plot_add
+    - [x] plot_show
+ - [x] main.c : Nakiri (12/1)
+ - [x] makefile : Nakiri (12/1)
 
 ### Video
  - [ ] animation : Toby (12/1)
