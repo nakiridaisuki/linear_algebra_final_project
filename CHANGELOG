@@ -36,3 +36,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Implemented transpose
 - Implemented multiply
 - Implemented pvector
+
+---
+## [nakiri] 2024-11-20
+
+### Added
+- Vector_free method
+- Plot_clean method
+
+### Changed
+- Implemented all function in plot.h
+- Implemented vector_free
+- Complete main.c

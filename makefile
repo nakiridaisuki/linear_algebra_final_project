@@ -11,7 +11,7 @@ DBGOBJS=$(patsubst %.c,%.dbg,$(SRCFILES))
 
 
 test: $(TEST) $(SRCOBJS)
-	$(CC) $(TEST) $(SRCOBJS) -o $(EXE)
+	$(CC) $(TEST) $(SRCOBJS) -o $(EXE) -lm
 .PHONY: test
 
 dtest: test.dbg $(DBGOBJS)
@@ -25,7 +25,7 @@ dtest: test.dbg $(DBGOBJS)
 	@$(CC) -D DEBUG -g -c $< -o $@
 
 all: $(MAIN) $(SRCOBJS)
-	$(CC) $(MAIN) $(SRCOBJS) -o $(EXE)
+	$(CC) $(MAIN) $(SRCOBJS) -o $(EXE) -lm
 
 
 debug: main.dbg $(DBGOBJS)

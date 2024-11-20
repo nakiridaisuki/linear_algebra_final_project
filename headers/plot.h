@@ -3,11 +3,12 @@
 
 typedef struct plot{
     int x, y;
-    char **canva;
+    char *canva;
 } plot;
 
 plot *plot_init(int x, int y);
-void plot_add(int x, int y, char c);
+void plot_add(plot *p, int u, int v, char c);
 void plot_show(const plot *p);
+void plot_clean(plot *p);
 
 #endif

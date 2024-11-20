@@ -11,5 +11,6 @@ vector* transpose(const vector* v);
 double dot(const vector* a, const vector* b);
 vector* multiply(const vector* a,const vector* b);
 void pvector(const vector* v);
+void *vector_free(vector *a);
 
 #endif
