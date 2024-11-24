@@ -16,6 +16,7 @@
  - [x] makefile : Nakiri (12/1)
 
 ### Video
+ (outline)[https://hackmd.io/@a0912168713/ryIjaUlQkg]
  - [ ] animation : Toby (12/1)
  - [ ] voice : Banana, Tomas(12/1)
 
